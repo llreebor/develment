@@ -13,8 +13,8 @@
 </head>
 
 <body class="body__main">
-    <a href="https://www.instagram.com/roman_timoshchuk/" class="banner" target="_blank">
-        <span class="banner__text">by Roman Timoshchuk</span>
+    <a href="https://www.instagram.com/roman__tymoshchuk/" class="banner" target="_blank">
+        <span class="banner__text">by Roman Tymoshchuk</span>
         <div class="banner__icon">
             <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_dd_249_137)">
@@ -56,11 +56,11 @@
                     <div class="logo"> <a href="./index.html"> <img src="./img/logo.svg" alt="logo"> </a> </div>
                     <ul class="menu">
                         <li class="menu__item active"><a href="#" class="menu__item-link ">Home</a></li>
-                        <li class="menu__item with__submenu">
+                        <li class="menu__item ">
                             <a href="#" class="menu__item-link">
                                 Services
 
-                                <ul class="submenu">
+                                <!-- <ul class="submenu">
                                     <li class="submenu__item">
                                         <a href="#" class="submenu__link">
                                             <div class="submenu__link-img">
@@ -288,7 +288,7 @@
                                             <div class="submenu__link-text">Machine Learning</div>
                                         </a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </a>
                         </li>
                         <li class="menu__item hidden"><a href="#" class="menu__item-link ">Services</a></li>
@@ -325,9 +325,6 @@
                             <p class="hero__text">We believe in creating innovative solutions in the digital world and
                                 delivering
                                 results that exceed our clients' expectations.</p>
-                            <p class="hero__text">Our experts have one goal. To help you reach yours. Build a strong
-                                digital presence
-                                and unleash your potential with Devalent.</p>
                             <p class="hero__text">Our experience and professionalism combined with advanced technologies
                                 will
                                 make your business smarter, safer, and more agile.</p>
@@ -1027,68 +1024,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-<script src="./js/scripts.min.js"></script>
+<script src="./js/scripts.js"></script>
 
 <script>
-    gsap.registerPlugin(ScrollTrigger)
-    // Hero animations
-    const tl = gsap.timeline()
 
-    tl.fromTo(
-        '.hero__title',
-        {
-            y: 50,
-            opacity: 0,
-        },
-        { y: 0, opacity: 1, duration: 1 },
-        0.4,
-    )
-        .fromTo(
-            '.hero__text',
-            {
-                y: 50,
-                opacity: 0,
-            },
-            { y: 0, opacity: 1, duration: 1, delay: 0, stagger: 0.15 },
-            0.6,
-
-        )
-        .fromTo(
-            '.hero__btn-1',
-            {
-                y: 50,
-                opacity: 0,
-            },
-            { y: 0, opacity: 1, duration: 1, delay: 0 },
-            2,
-        )
-        .fromTo(
-            '.hero__btn-2',
-            {
-                y: 50,
-                opacity: 0,
-            },
-            { y: 0, opacity: 1, duration: 1, delay: 0.3 },
-            2,
-        )
-        .fromTo(
-            '.logo',
-            {
-                y: -50,
-                opacity: 0,
-            },
-            { y: 0, opacity: 1, duration: 1 },
-            2,
-        )
-        .fromTo(
-            '.menu__item',
-            {
-                y: -50,
-                opacity: 0,
-            },
-            { y: 0, opacity: 1, duration: 1, stagger: 0.15 },
-            2,
-        )
 </script>
 
 </html>
